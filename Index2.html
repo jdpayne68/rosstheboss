@@ -1,0 +1,68 @@
+#!/bin/bash
+# This script creates a simple HTML page with a background image and some text.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class 6.5</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,h1,h3 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background-image: url('https://github.com/jdpayne68/GCP-startup-script-template/blob/main/philippines-flag-01.png');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    .w3-display-middle {
+      background-color: rgba(0, 0, 0, 0.466);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .transparent-background {
+      background-color: rgba(0, 0, 0, 0.575);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .rounded-image {
+      border-radius: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge"></div>
+    <div class="w3-display-middle w3-center">
+      <iframe src="https://giphy.com/embed/HAtZSvNJ3cszC" 
+              width="480" 
+              height="432" 
+              style="" frameBorder="0" 
+              class="giphy-embed" 
+              allowFullScreen>
+      </iframe><p><a href="https://giphy.com/gifs/boondocks-adult-swim-the-boondocks-HAtZSvNJ3cszC">via GIPHY</a></p>
+      </iframe>
+      <hr class="w3-border-grey" style="margin:auto;width:40%;margin-top:15px;">
+      <h3 class="w3-large w3-center" style="margin-top:15px;">
+        <a href="https://github.com/jdpayne68/GCP-startup-script-template/edit/main/new-class-template.sh"
+           class="w3-button w3-transparent w3-border w3-border-white w3-round-large w3-text-white"
+           style="margin-bottom:0px;"
+           target="_blank">
+          Source Code
+        </a>
+      </h3>
+    </div>
+    <div class="w3-display-bottomleft w3-padding-small transparent-background outlined-text">
+      <h1>My name is Jacques. Uhuru Sol is my group leader. In the 3 years, I plan to relocate to SE Asia.</h1>
+      <h3></h3>
+      <p><b>Instance Name:</b> $(hostname -f)</p>
+      <p><b>Instance Private IP Address: </b> $local_ipv4</p>
+      <p><b>Zone: </b> $zone</p>
+      <p><b>Project ID:</b> $project_id</p>
+      <p><b>Network Tags:</b> $network_tags</p>
+    </div>
+  </div>
+</body>
+</html>
